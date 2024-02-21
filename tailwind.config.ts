@@ -9,19 +9,17 @@ const config: Config = {
   theme: {
     screens: {
       sm: "640px",
-      // => @media (min-width: 640px) { ... }
-
       md: "768px",
-      // => @media (min-width: 768px) { ... }
-
       lg: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
       xl: "1280px",
-      // => @media (min-width: 1280px) { ... }
     },
     extend: {
+      colors: {
+        primary: "#3A5311", // Change #yourPrimaryColor to your desired primary color
+        secondary: "#80461B", // Change #yourSecondaryColor to your desired secondary color
+      },
       backgroundImage: {
+        "nav-bar": "url('/lawnMover.jpg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -30,4 +28,5 @@ const config: Config = {
   },
   plugins: [require("daisyui")],
 };
+
 export default config;

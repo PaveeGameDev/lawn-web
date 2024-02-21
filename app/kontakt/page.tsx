@@ -1,11 +1,11 @@
 import NavBar from "@/app/NavBar";
 
-export default function Home() {
+export default function Kontakt() {
   return (
     <>
       <NavBar
-        currentPage="domov"
-        currentHeading="Hello"
+        currentPage="kontakt"
+        currentHeading="Kontakt"
         currentSubtext="toto je specialni a velice dlouhy text"
       />
       <main className="p-5">Ahoj</main>
