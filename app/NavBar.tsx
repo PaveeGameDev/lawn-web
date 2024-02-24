@@ -15,7 +15,7 @@ export default function NavBar({
   currentHeading,
 }: Props) {
   return (
-    <div className="bg-nav-bar p-5 pb-16 bg-cover">
+    <div className="bg-nav-bar p-5 pb-12 bg-cover">
       <nav className="mb-2">
         <div className="flex flex-row w-full justify-between items-center">
           <Link href="/">
@@ -29,7 +29,7 @@ export default function NavBar({
       </nav>
       <div className="flex flex-col justify-center items-center space-y-5">
         <h1 className="font-bold text-3xl text-white">{currentHeading}</h1>
-        <p className="mx-8 text-white">{currentSubtext}</p>
+        <p className="mx-8 text-navbarSubtext">{currentSubtext}</p>
       </div>
     </div>
   );

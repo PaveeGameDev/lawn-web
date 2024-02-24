@@ -17,6 +17,8 @@ const config: Config = {
       colors: {
         primary: "#3A5311",
         secondary: "#80461B",
+        accent: "#5A5A5A",
+        navbarSubtext: "#D8D8D2",
       },
       width: {
         "1/8": "12.5%",

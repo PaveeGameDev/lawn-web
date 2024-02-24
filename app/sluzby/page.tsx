@@ -1,4 +1,6 @@
 import NavBar from "@/app/NavBar";
+import Service from "@/app/components/Service";
+import ContactQuickButton from "@/app/components/ContactQuickButton";
 
 export default function Sluzby() {
   return (
@@ -8,7 +10,21 @@ export default function Sluzby() {
         currentHeading="Služby"
         currentSubtext="toto je specialni a velice dlouhy text"
       />
-      <main className="p-5">Ahoj</main>
+      <main className="p-5">
+        <Service
+          name="Vertikutace"
+          microText="Odstranění plstí a provzdušnění"
+          image="/lawnMover.jpg"
+          imageAlt="Obrázek vertikutace"
+        />
+        <Service
+          name="Aerifikace"
+          microText="Proces provzdušnění půdy využívající propichování."
+          image="/lawnMover.jpg"
+          imageAlt="Obrázek vertikutace"
+        />
+        <ContactQuickButton />
+      </main>
     </>
   );
 }

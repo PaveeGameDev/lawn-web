@@ -12,7 +12,7 @@ export default function NavBarButtonsLittle({ currentPage }: Props) {
           Služby
         </Link>
       ) : (
-        <Link href="/sluzby" className="text-white">
+        <Link href="/sluzby" className="text-navbarSubtext">
           Služby
         </Link>
       )}
@@ -21,7 +21,7 @@ export default function NavBarButtonsLittle({ currentPage }: Props) {
           Půjčovna
         </Link>
       ) : (
-        <Link href="/pujcovna" className="text-white">
+        <Link href="/pujcovna" className="text-navbarSubtext">
           Půjčovna
         </Link>
       )}
@@ -30,7 +30,7 @@ export default function NavBarButtonsLittle({ currentPage }: Props) {
           Recenze
         </Link>
       ) : (
-        <Link href="/recenze" className="text-white">
+        <Link href="/recenze" className="text-navbarSubtext">
           Recenze
         </Link>
       )}

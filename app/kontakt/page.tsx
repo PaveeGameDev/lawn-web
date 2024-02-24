@@ -1,17 +1,12 @@
 import NavBar from "@/app/NavBar";
-import ContactInfo from "@/app/components/ContactInfo";
-import { MdOutlineEmail } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaHouseChimney } from "react-icons/fa6";
 
 export default function Kontakt() {
   return (
     <>
-      <NavBar
-        currentPage="kontakt"
-        currentHeading="Kontakt"
-        currentSubtext="toto je specialni a velice dlouhy text"
-      />
+      <NavBar currentPage="kontakt" currentHeading="Kontakt" />
       <main className="p-5 flex flex-col justify-center">
         <div>
           <p className="text-center text-lg">
@@ -23,7 +18,7 @@ export default function Kontakt() {
           <tbody>
             <tr>
               <td className="pb-4 w-1/8">
-                <MdOutlineEmail size={36} />
+                <MdEmail size={36} />
               </td>
               <td className="pb-4 w-1/2">
                 <p className="text-center">janvajs@gmail.com</p>
@@ -68,6 +63,18 @@ export default function Kontakt() {
             </tr>
           </tbody>
         </table>
+        <hr className="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded md:my-10 dark:bg-gray-700" />
+        <div>
+          <p className="text-center text-lg">
+            Rád za Vámi přijedu nejen do těchto lokalit:
+          </p>
+          <ul className="list-none p-5 text-center">
+            <li className="font-bold text-xl">Praha</li>
+            <li className="text-lg">Jesenice</li>
+            <li className="text-lg">Kamenice</li>
+            <li className="text-lg">Sulice</li>
+          </ul>
+        </div>
       </main>
     </>
   );
