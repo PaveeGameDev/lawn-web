@@ -15,7 +15,7 @@ export default function NavBar({
   currentHeading,
 }: Props) {
   return (
-    <div className="bg-nav-bar p-5 pb-16">
+    <div className="bg-nav-bar p-5 pb-16 bg-cover">
       <nav className="mb-2">
         <div className="flex flex-row w-full justify-between items-center">
           <Link href="/">

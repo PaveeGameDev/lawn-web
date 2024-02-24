@@ -15,8 +15,11 @@ const config: Config = {
     },
     extend: {
       colors: {
-        primary: "#3A5311", // Change #yourPrimaryColor to your desired primary color
-        secondary: "#80461B", // Change #yourSecondaryColor to your desired secondary color
+        primary: "#3A5311",
+        secondary: "#80461B",
+      },
+      width: {
+        "1/8": "12.5%",
       },
       backgroundImage: {
         "nav-bar": "url('/lawnMover.jpg')",
@@ -25,6 +28,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+  },
+  daisyui: {
+    themes: [{ mytheme: { primary: "#3A5311", secondary: "#80461B" } }],
   },
   plugins: [require("daisyui")],
 };
