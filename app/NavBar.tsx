@@ -28,7 +28,7 @@ export default function NavBar({
         </div>
       </nav>
       <div className="flex flex-col justify-center items-center space-y-5">
-        <h1 className="font-bold text-3xl text-white">{currentHeading}</h1>
+        <h1 className="font-bold text-5xl text-white">{currentHeading}</h1>
         <p className="mx-8 text-navbarSubtext">{currentSubtext}</p>
       </div>
     </div>

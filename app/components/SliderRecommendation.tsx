@@ -8,42 +8,56 @@ function SliderRecommendation() {
     centerPadding: "20px",
     centerMode: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
   };
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        <div className="px-1">
-          <Image
-            src="/lawnMover.jpg"
-            alt="Logo"
-            width={500}
-            height={400}
-            className=""
-          />
-        </div>
-        <div className="px-1">
-          <Image
-            src="/lawnMover.jpg"
-            alt="Logo"
-            width={500}
-            height={400}
-            className=""
-          />
-        </div>
-        <div className="px-1">
-          <Image
-            src="/lawnMover.jpg"
-            alt="Logo"
-            width={500}
-            height={400}
-            className=""
-          />
-        </div>
-      </Slider>
-    </div>
+    <>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        charSet="UTF-8"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      />
+      <div className="slider-container w-[23rem] mb-0">
+        <Slider {...settings}>
+          <div className="px-1">
+            <Image
+              src="/lawnMover.jpg"
+              alt="Logo"
+              width={500}
+              height={400}
+              className=""
+            />
+          </div>
+          <div className="px-1">
+            <Image
+              src="/lawnMover.jpg"
+              alt="Logo"
+              width={500}
+              height={400}
+              className=""
+            />
+          </div>
+          <div className="px-1">
+            <Image
+              src="/lawnMover.jpg"
+              alt="Logo"
+              width={500}
+              height={400}
+              className=""
+            />
+          </div>
+        </Slider>
+      </div>
+    </>
   );
 }
 

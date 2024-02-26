@@ -6,21 +6,30 @@ type Props = {
   microText: string;
   image: string;
   imageAlt: string;
+  variant?: "border-primary border-4";
 };
-export default function Service({ name, imageAlt, microText, image }: Props) {
+export default function Service({
+  name,
+  imageAlt,
+  microText,
+  image,
+  variant,
+}: Props) {
   return (
-    <div className="flex flex-col justify-center items-center mb-10">
+    <div
+      className={`flex flex-col justify-center items-center pb-8 p-4  ${variant} rounded-3xl`}
+    >
       <h2 className="text-center text-2xl mb-2">{name}</h2>
       <p className="text-center text-lg text-accent mb-2">{microText}</p>
       <Image
         src={image}
         alt={imageAlt}
-        width={200}
+        width={300}
         height={200}
         className="rounded-lg mb-2"
       />
       <Link
-        href={`/${name.toLowerCase()}`}
+        href={`/sluzby/${name.toLowerCase()}`}
         className="btn btn-primary btn-outline"
       >
         Chci vědět víc

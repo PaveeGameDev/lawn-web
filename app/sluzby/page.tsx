@@ -1,6 +1,5 @@
 import NavBar from "@/app/NavBar";
 import Service from "@/app/components/Service";
-import ContactQuickButton from "@/app/components/ContactQuickButton";
 
 export default function Sluzby() {
   return (
@@ -22,8 +21,8 @@ export default function Sluzby() {
           microText="Proces provzdušnění půdy využívající propichování."
           image="/lawnMover.jpg"
           imageAlt="Obrázek vertikutace"
+          variant="border-primary border-4"
         />
-        <ContactQuickButton />
       </main>
     </>
   );
