@@ -1,10 +1,11 @@
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaHouseChimney } from "react-icons/fa6";
+import HorizontalLine1 from "@/app/components/HorizontalLine1";
 
 export default function Contact() {
   return (
-    <div className="mt-8">
+    <div className="">
       <div>
         <p className="text-center text-lg">
           Napište mi nebo mi zavolejte a pojďme se vrhnout za perfektním
@@ -60,7 +61,16 @@ export default function Contact() {
           </tr>
         </tbody>
       </table>
-      <hr className="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded md:my-10 dark:bg-gray-700" />
+      <HorizontalLine1 />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.899287146!2d14.530847808506653!3d49.97837642409624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b91451e15bde1%3A0xa7d5b259e5be3a51!2sFitness%20GYM%20Zdim%C4%9B%C5%99ice!5e0!3m2!1sen!2scz!4v1709398945143!5m2!1sen!2scz"
+        width="100%"
+        height="300"
+        allowFullScreen={true}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <HorizontalLine1 />
       <div>
         <p className="text-center text-lg">
           Rád za Vámi přijedu nejen do těchto lokalit:

@@ -7,6 +7,7 @@ type Props = {
   image: string;
   imageAlt: string;
   variant?: "border-primary border-4";
+  isHomePage?: boolean;
 };
 export default function Service({
   name,
@@ -14,12 +15,18 @@ export default function Service({
   microText,
   image,
   variant,
+  isHomePage,
 }: Props) {
   return (
     <div
       className={`flex flex-col justify-center items-center pb-8 p-4  ${variant} rounded-3xl`}
     >
-      <h2 className="text-center text-2xl mb-2">{name}</h2>
+      {isHomePage ? (
+        <h3 className="text-center text-2xl mb-2">{name}</h3>
+      ) : (
+        <h2 className="text-center text-2xl mb-2">{name}</h2>
+      )}
+
       <p className="text-center text-lg text-accent mb-2">{microText}</p>
       <Image
         src={image}

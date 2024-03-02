@@ -32,7 +32,7 @@ const config: Config = {
     },
   },
   daisyui: {
-    themes: [{ mytheme: { primary: "#7cbb7c", secondary: "#80461B" } }],
+    themes: [{ mytheme: { primary: "#7ce604", secondary: "#80461B" } }],
   },
   plugins: [require("daisyui")],
 };
