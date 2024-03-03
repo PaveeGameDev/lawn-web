@@ -24,7 +24,7 @@ export default function RentalItem({ headline, info, images, variant }: Props) {
           className="mt-5 rounded-xl"
           src={image.src}
           alt={image.alt}
-          width={300}
+          width={400}
           height={200}
           key={key}
         />

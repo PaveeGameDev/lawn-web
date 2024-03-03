@@ -9,7 +9,7 @@ import MoreServices from "@/app/components/MoreServices";
 export default function Home() {
   return (
     <>
-      <NavBar currentPage="domov" currentHeading="Vitejte" />
+      <NavBar currentPage="domov" />
       <main className="p-5">
         <div className="mb-16">
           <h2 className="text-center text-3xl mb-2">Moje sluzby</h2>
@@ -48,7 +48,7 @@ export default function Home() {
         <GardenerVSLawnman />
         <BeforeAfter />
         <div>
-          <h2 className="text-center text-2xl mb-2">Kontakt</h2>
+          <h2 className="text-center text-3xl mb-2">Kontakt</h2>
           <Contact />
         </div>
       </main>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import Footer from "@/app/Footer";
 
 const inter = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -20,6 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className="">{children}</main>
         <Analytics />
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
