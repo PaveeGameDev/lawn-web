@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center mb-10">
+    <div className="flex flex-col items-center mb-20">
       <h2 className="text-center text-3xl mb-2">Neco o mne</h2>
       <p className="text-justify text-accent mb-2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum

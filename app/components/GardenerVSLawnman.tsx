@@ -1,6 +1,6 @@
 export default function GardenerVSLawnman() {
   return (
-    <div className="flex flex-col items-center mb-10">
+    <div className="flex flex-col items-center mb-20">
       <h2 className="text-center text-3xl mb-2">Zahradnik nebo Travnikar</h2>
       <p className="text-accent text-center mb-3">
         nunc. Cras libero ligula, faucibus id eros egestas, maximus sollicitudin

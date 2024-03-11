@@ -1,6 +1,5 @@
 import NavBar from "@/app/NavBar";
 import Contact from "@/app/components/Contact";
-import Footer from "@/app/Footer";
 
 export default function Kontakt() {
   return (
