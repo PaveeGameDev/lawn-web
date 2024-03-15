@@ -1,5 +1,6 @@
 import NavBar from "@/app/NavBar";
 import Service from "@/app/components/Service";
+import Contact from "@/app/components/Contact";
 
 export default function Sluzby() {
   return (
@@ -16,13 +17,19 @@ export default function Sluzby() {
           image="/lawnMover.jpg"
           imageAlt="Obrázek vertikutace"
         />
-        <Service
-          name="Aerifikace"
-          microText="Proces provzdušnění půdy využívající propichování."
-          image="/lawnMover.jpg"
-          imageAlt="Obrázek vertikutace"
-          variant="border-primary border-4"
-        />
+        <div className="mb-16">
+          <Service
+            name="Aerifikace"
+            microText="Proces provzdušnění půdy využívající propichování."
+            image="/lawnMover.jpg"
+            imageAlt="Obrázek vertikutace"
+            variant="border-primary border-4"
+          />
+        </div>
+        <div>
+          <h2 className="text-center text-3xl mt-32">Kontakt</h2>
+          <Contact />
+        </div>
       </main>
     </>
   );

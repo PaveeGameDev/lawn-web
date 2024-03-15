@@ -1,5 +1,6 @@
 import NavBar from "@/app/NavBar";
 import RentalItem from "@/app/components/RentalItem";
+import Contact from "@/app/components/Contact";
 
 export default function Pujcovna() {
   return (
@@ -17,6 +18,10 @@ export default function Pujcovna() {
           images={[{ src: "/lawnMover.jpg", alt: "Vertikutator foto" }]}
           variant="border-primary border-4"
         />
+        <div>
+          <h2 className="text-center text-3xl mt-16">Kontakt</h2>
+          <Contact />
+        </div>
       </main>
     </>
   );

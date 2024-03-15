@@ -13,10 +13,10 @@ export default function Footer() {
             <Link href="/kontakt">Kontakt</Link>
           </div>
           <div className="flex flex-col space-y-2 text-right text-white underline">
-            <Link href="/">GDPR</Link>
-            <Link href="/">Reklamace</Link>
-            <Link href="/">Obchodni podminky</Link>
-            <Link href="/">ICO</Link>
+            <Link href="/pravni/gdpr">GDPR</Link>
+            <Link href="/pravni/reklamace">Reklamace</Link>
+            <Link href="/pravni/obchodniPodminky">Obchodni podminky</Link>
+            <Link href="/pravni/ico">ICO</Link>
           </div>
         </div>
         <div className="flex flex-row justify-between">
